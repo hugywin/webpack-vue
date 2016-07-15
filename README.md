@@ -52,9 +52,11 @@ resolve: {
     extension: ['', '.js'],
     //别名
     alias: {
-        filter: path.join(__dirname, 'src/filters')
+        filter: path.join(——dirname, 'src/filters')
     }
 },
 
 plugins
 强大的webpack插件 （编译, 导出 Hash 的表, 导出 CSS 等等）
+
+#demo4
