@@ -1,6 +1,6 @@
 # webpack-vue
 
-webpack-vue 入坑之旅
+webpack-vue 入坑之旅 (ths! guowenfh https://github.com/guowenfh/vue-webpack)
 
 #demo1
 npm install webpack --save-dev
@@ -40,7 +40,7 @@ output
 生成文件配置
 path 对应文件路径
 filename 配置生成文件名
-publicPath 公共资源输出路径， 图片类
+publicPath 公共资源输出路径， 图片类 (publicPath: path.join(__dirname, './dist/'))
 
 module
 主要配置loaders
@@ -52,7 +52,7 @@ resolve: {
     extension: ['', '.js'],
     //别名
     alias: {
-        filter: path.join(——dirname, 'src/filters')
+        filter: path.join(__dirname, 'src/filters')
     }
 },
 
@@ -60,3 +60,14 @@ plugins
 强大的webpack插件 （编译, 导出 Hash 的表, 导出 CSS 等等）
 
 #demo4
+webpack #启动webpack 服务
+webpack -w #监听文件变化实时打包更新
+webpack -p #打包后压缩文件
+webpack -d #提供sourceMaps 方便调试 生成map文件
+webpack --colors #输出结果带彩色
+webpack --profile #输出性能数据 可以看到耗时
+webpack --display-modules #默认情况下 node_modules 下的模块会被隐藏，加上这个参数可以显示这些被隐藏的模块
+
+
+加载图片
+npm install url-loader --save-dev
